@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "stevebriskin:energy_tracker",
+  "visibility": "private",
+  "url": "",
+  "description": "Modular powersensor component: energy_tracker",
+  "models": [
+    {
+      "api": "rdk:component:power_sensor",
+      "model": "stevebriskin:power_sensor:energy_tracker",
+      "short_description": "Energy tracking of a power sensor",
+      "markdown_link": "README.md#module"
+    }
+  ],
+  "applications": null,
+  "entrypoint": "bin/energy_tracker",
+  "first_run": "",
+  "build": {
+    "build": "make module.tar.gz",
+    "setup": "make setup",
+    "path": "bin/module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}
